@@ -333,6 +333,10 @@ Reload the current world, note that a new world is created with default settings
 Load a new world with default settings using `map_name` map. All actors present in the current world will be destroyed.  
     - **Parameters:**
         - `map_name` (_str_) – Name of the map to load, accepts both full paths and map names, e.g. '/Game/Carla/Maps/Town01' or 'Town01'.  
+- <a name="carla.Client.generate_opendrive_world"></a>**<font color="#7fb800">generate_opendrive_world</font>**(<font color="#00a6ed">**self**</font>, <font color="#00a6ed">**opendrive**</font>)  
+Loads a new world with a basic physical topology generated from an OpenDRIVE file passed as `string`. It is similar to `client.load_world(map_name)` but allows for custom OpenDRIVE maps in server side. Cars can drive around the map, but there are no graphics besides the road and sidewalks.  
+    - **Parameters:**
+        - `opendrive` (_str_) – OpenDRIVE data as `string`.  
 - <a name="carla.Client.start_recorder"></a>**<font color="#7fb800">start_recorder</font>**(<font color="#00a6ed">**self**</font>, <font color="#00a6ed">**filename**</font>)  
 If we use a simple name like 'recording.log' then it will be saved at server folder 'CarlaUE4/Saved/recording.log'. If we use some folder in the name, then it will be considered to be an absolute path, like '/home/carla/recording.log'.  
     - **Parameters:**

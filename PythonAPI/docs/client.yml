@@ -89,6 +89,17 @@
         Load a new world with default settings using `map_name` map. All actors
         present in the current world will be destroyed.
     # --------------------------------------
+    - def_name: generate_opendrive_world
+      params:
+      - param_name: opendrive
+        type: str
+        doc: >
+          OpenDRIVE data as `string`.
+      doc: >
+        Loads a new world with a basic physical topology generated from an OpenDRIVE file passed as `string`.
+        It is similar to `client.load_world(map_name)` but allows for custom OpenDRIVE maps in server side.
+        Cars can drive around the map, but there are no graphics besides the road and sidewalks.
+    # --------------------------------------
     - def_name: start_recorder
       params:
       - param_name: filename
