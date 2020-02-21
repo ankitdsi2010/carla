@@ -16,11 +16,6 @@ the most important ones.
 	* Emulate the virtual display
 	* Extra
 	* Running CARLA
-  * [__Command line options__](#command-line-options) 
-
-
-!!! Important
-    Some of the command options shown below are not directly equivalent when using the CARLA packaged releases. Read the [Command line options](#command-line-options) section to learn more about this. 
 
 ---------------
 ##Graphics quality
@@ -103,7 +98,7 @@ DISPLAY= ./CarlaUE4.sh -opengl
 Note that this method, in multi-GPU environments, does not allow to choose the GPU that the simulator will use for rendering. To do so, read the following section.
 
 ---------------
-##Running off-scren using a preferred GPU  
+##Running off-screen using a preferred GPU  
 
 !!! note
     There is an alternative solution with mixed results using SDL2 for CUDA enabled devices in the issue [#225](https://github.com/carla-simulator/carla/issues/225).
