@@ -16,7 +16,6 @@ the most important ones.
 	* Emulate the virtual display
 	* Extra
 	* Running CARLA
-  * [__Command line options__](#command-line-options) 
 
 
 !!! Important
